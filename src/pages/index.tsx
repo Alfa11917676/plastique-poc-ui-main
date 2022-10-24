@@ -30,13 +30,11 @@ export default function Index() {
 
   if (!isConnected)
     return (
-      <Link href="/metamask">
-        <a href="https://metamask.io/">
-          <h2 className=" text-center font-bold text-red-200 mt-20 mx-auto">
-            Please install a web3 wallet like Metamask
-          </h2>
-        </a>
-      </Link>
+      <a href="https://metamask.io/">
+        <h2 className=" text-center font-bold text-red-200 mt-20 mx-auto">
+          Please install a web3 wallet like Metamask
+        </h2>
+      </a>
     );
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
