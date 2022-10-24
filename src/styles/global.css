@@ -1,0 +1,161 @@
+@tailwind base;
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../../public/assets/fonts/euclidcircularb-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../../public/assets/fonts/euclidcircularb-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../../public/assets/fonts/euclidcircularb-bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../../public/assets/fonts/euclidcircularb-light.woff2") format("woff2");
+  font-weight: 100;
+}
+
+html {
+  @apply bg-pageBg;
+  font-family: "Euclid Circular B";
+  @apply font-medium;
+  color: white;
+}
+
+body,
+input,
+select,
+button {
+  font-family: "Euclid Circular B";
+  color: white;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px 48px;
+  background: #35373f;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #31d2f5;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 87px;
+  line-height: 104.8%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+
+span {
+  font-size: 0.9rem;
+  @apply text-lightGray;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  @apply text-blue-500;
+  @apply underline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.customContainer {
+  max-width: 1300px;
+}
+
+@media (max-width: 1536px) {
+  h1 {
+    font-size: 67px;
+  }
+}
+
+@media (max-width: 3000px) {
+  .customContainer {
+    max-width: 2000px;
+  }
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .customContainer {
+    max-width: 1808px;
+  }
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .customContainer {
+    max-width: 1740px;
+  }
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .customContainer {
+    max-width: 1540px;
+  }
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .customContainer {
+    max-width: 1376px;
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
