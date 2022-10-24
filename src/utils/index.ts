@@ -13,7 +13,7 @@ export const getCurrencyLogo = (currency: Currencies): string => {
 };
 
 export const getProvider = () => {
-  return new ethers.providers.InfuraProvider(`rinkeby`, `e55fcfdbebff4e3e8ca3f75f85770aa3`);
+  return new ethers.providers.InfuraProvider(`goerli`, `07447ee41c2f4f4faf367d4ee05f5bb8`);
 };
 
 export const getConnectedAddress = async (): Promise<string> => {
