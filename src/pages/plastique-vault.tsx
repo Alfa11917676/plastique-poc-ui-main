@@ -23,16 +23,10 @@ export default function Index() {
   useEffect(() => {
     (async () => {
       if (!window.ethereum) {
-        setIsConnected(false);
+        setIsConnected(true);
         return;
       }
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const address = (await provider.listAccounts())[0];
-      if (!address) {
-        setIsConnected(true);
-      } else {
-        setIsConnected(true);
-      }
+      setIsConnected(true);
     })();
   }, []);
 

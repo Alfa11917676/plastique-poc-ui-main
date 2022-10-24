@@ -15,6 +15,9 @@
     "firebase-deploy": "yarn && yarn build-prod && firebase deploy"
   },
   "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/react": "^1.9.3",
+    "@3rdweb/sdk": "^1.42.1",
     "@aws-sdk/client-dynamodb": "^3.53.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

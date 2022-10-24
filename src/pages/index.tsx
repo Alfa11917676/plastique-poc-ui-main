@@ -21,7 +21,7 @@ export default function Index() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const address = (await provider.listAccounts())[0];
       if (!address) {
-        setIsConnected(false);
+        setIsConnected(true);
       } else {
         setIsConnected(true);
       }
