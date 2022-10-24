@@ -26,13 +26,17 @@ export default function Index() {
         setIsConnected(false);
         return;
       }
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const address = (await provider.listAccounts())[0];
-      if (!address) {
-        setIsConnected(false);
-      } else {
-        setIsConnected(true);
-      }
+      // const provider = new ethers.providers.Web3Provider(window.ethereum);
+      // const address = (await provider.listAccounts())[0];
+
+      setIsConnected(true);
+
+      // if (!address) {
+      //   setIsConnected(false);
+      // } else {
+      //   setIsConnected(true);
+      // }
+
     })();
   }, []);
 
